@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:row="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    row:title="@string/analizer_results_optimization_gzip_not_enabled"
+    />

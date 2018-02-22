@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">Pr-Cy анализ сайта</string>
+    <string name="app_descr">Pr-Cy.ru анализ сайта, проверка ТИЦ и PR</string>
+
+    <string name="navigation_drawer_open">Открыть меню</string>
+    <string name="navigation_drawer_close">Закрыть меню</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="action_analize">Анализ</string>
+    <string name="action_favourites">Избранные сайты</string>
+    <string name="action_login">Вход</string>
+
+    <string name="login_fragment_title">Ввод ключа доступа</string>
+    <string name="login_fragment_save_title">Сохранить</string>
+    <string name="login_fragment_clear_title">Стереть</string>
+    <string name="login_fragment_key_hint">Ключ для доступа к API</string>
+    <string name="login_fragment_key_prompt">Получить ключ можно <a href="https://a.pr-cy.ru/settings/api">здесь</a> </string>
+    <string name="login_fragment_key_save_bad_format">Сохраняемый ключ не соответствует заданному формату</string>
+
+
+    <string name="analize_fragment_offline_checkbox_text">Оффлайн</string>
+    <string name="analize_fragment_hint">Введите доменное имя</string>
+    <string name="analize_fragment_analize">Анализ</string>
+    <string name="analize_fragment_error_bad_domain">Введите корректное доменное имя</string>
+    <string name="analize_fragment_error_network">Произошла сетевая ошибка: %1$s</string>
+    <string name="analize_fragment_error_analize_internal">Произошла ошибка при анализе: %1$s</string>
+
+    <string name="analize_in_progress_fragment_try_again">Повторить</string>
+    <string name="analize_in_progress_fragment_try_online">Повторить онлайн</string>
+
+    <string name="analize_in_progress_fragment_offline">Оффлайн</string>
+    <string name="analize_in_progress_fragment_error_prefix">Произошла ошибка при анализе сайта:\n%1$s</string>
+    <string name="analize_in_progress_error_getting_domain_from_bd">Данные о домене %1$s не найдены в кэше</string>
+    <string name="analize_in_progress_fragment_in_cache_message">Нажмите сюда чтобы получить данные о сайте %1$s из кэша предыдущих запросов</string>
+    <string name="analize_in_progress_error_timeout">Таймаут ожидания завершения анализа. Пожалуйста, попробуйте еще раз</string>
+
+    <string name="action_update">Обновить</string>
+    <string name="action_add_to_favourites">Добавить в избранное</string>
+
+    <string name="analize_results_update_time">Время обновления данных: %1$s</string>
+
+    <string name="field_title_tic">ТИЦ</string>
+    <string name="field_title_yak">Яндекс каталог</string>
+    <string name="field_title_ya_rank">Яндекс Rank</string>
+    <string name="field_title_ya_index">Инд. Яндекс</string>
+    <string name="field_title_go_index">Инд. Google</string>
+    <string name="field_title_alexa_index">Рейтинг Alexa</string>
+
+    <string name="analize_results_table_title_social_counters">Социальная активность</string>
+
+    <string name="yes">да</string>
+    <string name="no">нет</string>
+    <string name="na">n/a</string>
+
+    <string name="analize_results_vkontakte">ВКонтакте</string>
+    <string name="analize_results_facebook">Facebook</string>
+    <string name="analize_results_google_plus">Google+</string>
+    <string name="analize_results_twitter">Twitter</string>
+
+    <string name="analize_results_main_params">Основные параметры</string>
+    <string name="analize_results_additional_params">Дополнительные параметры</string>
+    <string name="analize_results_yandex_citation">ТИЦ</string>
+    <string name="analize_results_yandex_index">Индекс Яндекс</string>
+    <string name="analize_results_yandex_rank">Яндекс Rank</string>
+    <string name="analize_results_yandex_glue">Склейка домена</string>
+    <string name="analize_results_yandex_ags">Фильтр АГС</string>
+    <string name="analize_results_yandex_viruses">Проверка вирусов</string>
+    <string name="analize_result_yandex_megaindex">Видимость в Яндекс</string>
+
+    <string name="analize_results_yandex_yac_rubriks">Рубрики</string>
+    <string name="analize_results_yandex_yac_header_found">Сайт найден в %1$d категориях</string>
+    <string name="analize_results_yandex_yac_header_not_found">Сайт не добавлен в каталог</string>
+    <string name="analize_results_yandex_yac">Яндекс.Каталог</string>
+
+
+    <string name="analize_results_google_index">Индекс Google</string>
+    <string name="analize_results_google_viruses">Проверка вирусов</string>
+
+    <string name="analize_results_domain_ip">IP адрес</string>
+    <string name="analize_results_domain_hosting">Хостинг</string>
+    <string name="analize_results_domain_roskomnanzor">Реестр запрещенных сайтов</string>
+    <string name="analize_results_domain_ipisp">Датацентр</string>
+    <string name="analize_results_domain_whois_creation_date">Домен зарегистрирован</string>
+    <string name="analize_results_domain_whois_expiration_date">Домен истекает</string>
+    <string name="analize_results_domain_web_server">Веб сервер</string>
+    <string name="analize_results_domain_ssl">SSL сертификат</string>
+    <string name="analize_results_domain_robots">Файл robots.txt</string>
+
+    <string name="analize_results_domain_public_statistics">Открытая статистика</string>
+    <string name="analize_results_domain_public_statistics_source">Источник \"%1$s\"</string>
+    <string name="analize_results_domain_public_statistics_visits_per_day">Посещений в день</string>
+    <string name="analize_results_domain_public_statistics_visits_per_week">Посетителей в неделю</string>
+    <string name="analize_results_domain_public_statistics_visits_per_month">Посетителей в месяц</string>
+    <string name="analize_results_domain_public_statistics_page_per_day">Просмотров в день</string>
+    <string name="analize_results_domain_public_statistics_page_per_week">Просмотров в неделю</string>
+    <string name="analize_results_domain_public_statistics_page_per_month">Просмотров в месяц</string>
+
+    <string name="analize_results_domain_statistics_systems">Системы статистики</string>
+
+    <string name="analize_results_optimization_AvoidInterstitials">Всплывающие окна отсутствуют</string>
+    <string name="analize_results_optimization_AvoidLandingPageRedirects">Переадресация отсутствует</string>
+    <string name="analize_results_optimization_AvoidPlugins">Плагины отсутствуют</string>
+    <string name="analize_results_optimization_ConfigureViewport">Тэг viewport настроен</string>
+    <string name="analize_results_optimization_EnableGzipCompression">Сжатие Gzip</string>
+    <string name="analize_results_optimization_LeverageBrowserCaching">Кэширование ресурсов настроено</string>
+    <string name="analize_results_optimization_MinimizeRenderBlockingResources">Блокирующие ресурсы</string>
+    <string name="analize_results_optimization_OptimizeImages">Сжатие изображений</string>
+    <string name="analize_results_optimization_PrioritizeVisibleContent">Видимый контент оптимизирован</string>
+    <string name="analize_results_optimization_ServerResponseTime">Короткое время ответа</string>
+    <string name="analize_results_optimization_SizeContentToViewport">Страница помещается на экран</string>
+    <string name="analize_results_optimization_SizeTapTargetsAppropriately">Размер элементов достаточен</string>
+    <string name="analize_results_optimization_UseLegibleFontSizes">Размер шрифтов достаточен</string>
+
+    <string name="analize_results_optimization_elements_too_small">Некоторые элементы слишком малы</string>
+    <string name="enabled">Включено</string>
+    <string name="disabled">Выключено</string>
+    <string name="analizer_results_optimization_gzip_not_enabled">Включите сжатие, чтобы уменьшить объем передаваемых данных на %1$s (%2$s)</string>
+    <string name="analizer_results_optimization_images_not_enabled">Оптимизируйте изображения, чтобы уменьшить их объем на %1$s (%2$s)</string>
+
+    <string name="analize_results_optimization_decrease_resources">Удалите блокирующие ресурсы</string>
+
+    <string name="analize_results_main_page_page_size">Размер HTML страницы</string>
+    <string name="analize_results_main_page_encoding">Кодировка</string>
+    <string name="analize_results_main_page_js_frameworks">JavaScript фреймворки</string>
+    <string name="analize_results_main_page_opengraph">Микроразметка Open Graph</string>
+    <string name="analize_results_main_page_description">Описание страницы</string>
+
+    <string name="analize_results_main_page_headers">Заголовки</string>
+    <string name="analize_results_main_page_headers_h1">H1</string>
+    <string name="analize_results_main_page_headers_h2">H2</string>
+    <string name="analize_results_main_page_headers_h3">H3</string>
+    <string name="analize_results_main_page_headers_h4">H4</string>
+    <string name="analize_results_main_page_headers_h5">H5</string>
+    <string name="analize_results_main_page_headers_h6">H6</string>
+    <string name="analize_results_main_page_description_empty">Описание не задано</string>
+
+    <string name="analize_results_main_page_sickness">Тошнота</string>
+    <string name="analize_results_main_page_text_length">Длина текста</string>
+    <string name="analize_results_main_page_title">Заголовок страницы</string>
+    <string name="analize_results_main_page_title_length">Длина</string>
+    <string name="analize_results_main_page_text_length_value">%1$s символа(ов)</string>
+    <string name="analize_results_main_page_word_count">Количество слов</string>
+    <string name="analize_results_main_page_html_speed_title">Скорость загрузки HTML</string>
+    <string name="analize_results_main_page_html_speed">%1$s сек - быстрее чем %2$s проверенных сайтов.</string>
+    <string name="analize_results_main_page_www_redirect">Переадресация с WWW</string>
+
+    <string name="links">Ссылки</string>
+    <string name="internal_links">Внутренние ссылки</string>
+    <string name="external_links">Внешние ссылки</string>
+    <string name="not_found">Не найдено</string>
+    <string name="found">Найдено</string>
+
+    <string name="css_files">CSS-файлы</string>
+    <string name="js_files">JS-файлы</string>
+
+    <string name="decrease_on">на %1$s (%2$s)</string>
+    <string name="errors">Ошибки</string>
+    <string name="warnings">Предупреждения</string>
+    <string name="htmlValidator">HTML validator</string>
+    <string name="page_valided">Страница валидна</string>
+
+    <string name="fb_like">Лайков</string>
+    <string name="fb_talking">Обсуждений</string>
+
+    <string name="vk_members">Участников</string>
+
+    <string name="tw_tweets">Твитов</string>
+    <string name="tw_following">Читаемых</string>
+    <string name="tw_followers">Читателей</string>
+
+    <string name="gp_circled">Поделилось</string>
+    <string name="gp_added">Добавлено в +1</string>
+
+    <string name="no_favourites">В Избранное не добавлено ни одного сайта</string>
+
+    <string name="loading">Загрузка...</string>
+    <string name="title_activity_widget_configure">WidgetConfigureActivity</string>
+    <string name="loading_error">Произошла ошибка при загрузке данных: %1$s</string>
+
+    <string name="siteLink"><font color='white'><a href='https://a.pr-cy.ru/'>Анализ на pr-cy.ru</a></font></string>
+
+</resources>

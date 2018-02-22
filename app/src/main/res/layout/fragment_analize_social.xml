@@ -1,0 +1,158 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:table="http://schemas.android.com/apk/res-auto"
+    xmlns:row="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.prcy.app.gui.fragments.AnalizeSocialFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_table_title_social_counters"
+            table:icon="@drawable/icon_social">
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/vkSocialCounter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_vkontakte"
+                row:icon="@drawable/vk"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/fbSocialCounter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_facebook"
+                row:icon="@drawable/fb"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/gpSocialCounter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_google_plus"
+                row:icon="@drawable/gp"
+                />
+
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableSocialLayout
+            android:id="@+id/facebookSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_facebook"
+            table:icon="@drawable/fb">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/fbLikes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/fb_like"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/fbTalking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/fb_talking"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableSocialLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableSocialLayout
+            android:id="@+id/vkontakteSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_vkontakte"
+            table:icon="@drawable/vk">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/vkMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/vk_members"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableSocialLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableSocialLayout
+            android:id="@+id/twitterSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_twitter"
+            table:icon="@drawable/tw">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/twTweets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/tw_tweets"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/twFollowers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/tw_followers"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/twFollowing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/tw_following"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableSocialLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableSocialLayout
+            android:id="@+id/googlePlusSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_google_plus"
+            table:icon="@drawable/gp">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/gpCircled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/gp_circled"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/gpPlusOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/gp_added"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableSocialLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

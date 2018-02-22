@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="sheet_text_scrim_height_top">100dip</dimen>
+    <dimen name="sheet_text_scrim_height_bottom">@dimen/sheet_text_scrim_height_top</dimen>
+
+    <dimen name="analize_field_height">50dip</dimen>
+    <dimen name="analize_update_time_height">20dip</dimen>
+    <dimen name="analize_base_info_layout_height">120dip</dimen>
+
+    <dimen name="analize_results_expanded_title_margin_start">10dip</dimen>
+
+    <dimen name="search_view_inset">5dp</dimen>
+    <dimen name="sliding_search_view_header_height">250dp</dimen>
+
+    <dimen name="analize_results_table_header_icon_size">30dip</dimen>
+    <dimen name="analize_results_table_social_icon_size">80dip</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="analize_results_screenshot_layout_height">300dip</dimen>
+
+</resources>

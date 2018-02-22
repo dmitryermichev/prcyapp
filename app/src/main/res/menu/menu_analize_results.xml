@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.prcy.app.gui.AnalizeResultsActivity">
+    <item
+        android:id="@+id/action_favourites"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_add_to_fav"
+        android:title="@string/action_add_to_favourites"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_update"
+        android:title="@string/action_update"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,159 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:table="http://schemas.android.com/apk/res-auto"
+    xmlns:row="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.prcy.app.gui.fragments.AnalizeSocialFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_main_params">
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/domainIp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_ip"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/domainIpIsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_ipisp"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/domainWhoisCreationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_whois_creation_date"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/domainWhoisExpirationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_whois_expiration_date"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_additional_params">
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/domainRoskomnadzor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_roskomnanzor"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/domainWebServer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_web_server"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/domainSsl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_ssl"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/domainRobots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_robots"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_domain_public_statistics">
+
+            <ru.prcy.app.gui.views.AnalizeResultTableSingleColumnLayout
+                android:id="@+id/publicStatisticsSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/visitsPerDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_public_statistics_visits_per_day"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/visitsPerWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_public_statistics_visits_per_week"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/visitsPerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_public_statistics_visits_per_month"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pagesPerDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_public_statistics_page_per_day"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pagesPerWeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_public_statistics_page_per_week"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pagesPerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_domain_public_statistics_page_per_month"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:id="@+id/statisticsSystems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_domain_statistics_systems">
+
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

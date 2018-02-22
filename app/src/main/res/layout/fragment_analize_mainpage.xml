@@ -1,0 +1,265 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:table="http://schemas.android.com/apk/res-auto"
+    xmlns:row="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.prcy.app.gui.fragments.AnalizeSocialFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_main_params">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_page_size"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageEncoding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_encoding"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageSickness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_sickness"
+                />
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageTextLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_text_length"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageWordsCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_word_count"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageWwwRedirect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_www_redirect"
+                />
+
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/links">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/internalLinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/internal_links"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/externalLinks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/external_links"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_main_page_title">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableSingleColumnLayout
+                android:id="@+id/pageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/not_found"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageTitleLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_title_length"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_main_page_description">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableSingleColumnLayout
+                android:id="@+id/pageDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/not_found"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageDescriptionLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_title_length"
+                />
+
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_main_page_html_speed_title">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableSingleColumnLayout
+                android:id="@+id/pageSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/not_found"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_main_page_headers">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageH1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_headers_h1"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageH2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_headers_h2"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageH3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_headers_h3"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_headers_h4"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageH5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_headers_h5"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/pageH6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/analize_results_main_page_headers_h6"
+                />
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableSocialLayout
+            android:id="@+id/openGraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_main_page_opengraph">
+
+
+        </ru.prcy.app.gui.views.AnalizeResultTableSocialLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:id="@+id/javascript_frameworks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/analize_results_main_page_js_frameworks">
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+
+        <ru.prcy.app.gui.views.AnalizeResultTableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            table:title="@string/htmlValidator">
+
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/htmlValidatorStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/page_valided"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/htmlValidatorWarnings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/warnings"
+                />
+
+            <ru.prcy.app.gui.views.AnalizeResultTableRowLayout
+                android:id="@+id/htmlValidatorErrors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                row:title="@string/errors"
+                />
+
+
+        </ru.prcy.app.gui.views.AnalizeResultTableLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

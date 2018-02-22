@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sliding_search_view_header_height"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"/>
+
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:id="@+id/header_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/sliding_search_view_header_height"-->
+        <!--android:background="@color/colorPrimary"/>-->
+
+    <FrameLayout
+        android:id="@+id/dim_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/floating_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:translationY="@dimen/sliding_search_view_header_height"
+            app:floatingSearch_close_search_on_keyboard_dismiss="false"
+            app:floatingSearch_dimBackground="false"
+            app:floatingSearch_dismissOnOutsideTouch="true"
+            app:floatingSearch_leftActionMode="showSearch"
+
+            app:floatingSearch_searchBarMarginLeft="@dimen/search_view_inset"
+            app:floatingSearch_searchBarMarginRight="@dimen/search_view_inset"
+            app:floatingSearch_searchBarMarginTop="@dimen/search_view_inset"
+            app:floatingSearch_searchHint="@string/analize_fragment_hint"
+            app:floatingSearch_showSearchKey="true"
+            app:floatingSearch_suggestionsListAnimDuration="250"/>
+
+        <CheckBox
+            android:id="@+id/offlineCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/analize_fragment_offline_checkbox_text"
+            android:layout_gravity="center_horizontal"
+            android:translationY="320dip"
+            android:buttonTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"/>
+    </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/siteLink"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/siteLink"
+            android:layout_margin="10dip"
+            android:textColor="@color/background"
+            android:textSize="18sp"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="150dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/site_link"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginLeft="10dip"-->
+            <!--android:layout_marginRight="10dip"-->
+            <!--android:layout_marginBottom="10dip" />-->
+
+
+</RelativeLayout>
+
